@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Remote Swap</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			.remote {
+				border: solid teal 10px;
+				width: 960px;
+				height: 320px;
+				margin: 25px auto;
+				background-color: white;
+				display: flex;
+			}
+			/*Thumbnails on the right or left*/
+			.remote .thumbs {
+				width: 320px;
+				display: flex;
+				flex-flow: row wrap;
+			/*Large opposite of the thumbnails (e.g. right or left)*/
+		  }
+			.remote .large {
+
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Remote Swap</h1>
+
+		<div class="remote">
+			<div class="thumbs">
+				<!-- Thumbnails Go Here -->
+				<img src="./img/small/anakinThumb.jpg" alt="anakin">
+				<img src="./img/small/bb8Thumb.jpg" alt="bb8">
+				<img src="./img/small/c3poThumb.jpg" alt="c3po">
+				<img src="./img/small/chewbaccaThumb.jpg" alt="chewbacca">
+				<img src="./img/small/deathstarThumb.jpg" alt="deathstar">
+				<img src="./img/small/destroyerThumb.jpg" alt="destroyer">
+				<img src="./img/small/hansoloThumb.jpg" alt="hansolo">
+				<img src="./img/small/kylorenThumb.jpg" alt="kyloren">
+				<img src="./img/small/leiaThumb.jpg" alt="leia">
+				<img src="./img/small/lukeThumb.jpg" alt="luke">
+				<img src="./img/small/millemmiumThumb.jpg" alt="millemmium">
+				<img src="./img/small/r2d2Thumb.jpg" alt="r2d2">
+				<img src="./img/small/reyThumb.jpg" alt="rey">
+				<img src="./img/small/stormtroopersThumb.jpg" alt="stormtroopers">
+				<img src="./img/small/tieThumb.jpg" alt="tie">
+				<img src="./img/small/yodaThumb.jpg" alt="yoda">
+
+			</div>
+			<div class="large">
+				<!-- Large Goes Here -->
+				<img src="./img/large/anakinLarge.jpg" alt="Anakin" class="enlarge">
+			</div>
+		</div>
+
+		<script>
+			// Your script goes here.
+			var largeone = document.querySelectorAll ('img.enlarge');
+			var thumbnails = document.querySelectorAll ('.thumbs img');
+
+			console.log(largeone[0]);
+			console.log(thumbnails);
+
+			thumbnails[1].addEventListener('mouseover',function(){
+				console.log('ahhh');
+				largeone[0].src = './img/large/bb8Large.jpg';
+			});
+			thumbnails[2].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/c3poLarge.jpg';
+			});
+			thumbnails[3].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/chewbaccaLarge.jpg';
+			});
+			thumbnails[4].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/deathstarLarge.jpg';
+			});
+			thumbnails[5].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/destroyerLarge.jpg';
+			});
+			thumbnails[6].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/hansoloLarge.jpg';
+			});
+			thumbnails[7].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/kylorenLarge.jpg';
+			});
+			thumbnails[8].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/leiaLarge.jpg';
+			});
+			thumbnails[9].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/lukeLarge.jpg';
+			});
+			thumbnails[10].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/millemmiumLarge.jpg';
+			});
+			thumbnails[11].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/r2d2Large.jpg';
+			});
+			thumbnails[12].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/reyLarge.jpg';
+			});
+			thumbnails[13].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/stormtrooperLarge.jpg';
+			});
+			thumbnails[14].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/tieLarge.jpg';
+			});
+			thumbnails[15].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/yodaLarge.jpg';
+			});
+			thumbnails[0].addEventListener('mouseover',function(){
+				largeone[0].src = './img/large/anakinLarge.jpg';
+			});
+
+
+		</script>
+	</body>
+</html>
