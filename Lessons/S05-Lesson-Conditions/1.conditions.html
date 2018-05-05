@@ -58,11 +58,53 @@
 			/*-------------------------------------
 			| Conditions
 			-------------------------------------*/
+			var weather = 'rainy';
 
+			if (weather == 'sunny')
+			{
+				console.log('bring your umbrella');
+			}
+			else {
+				console.log('bring your sumscreen');
+			}
 
 			/*-------------------------------------
 			| Toggle Element Examples
 			-------------------------------------*/
+			// selector : remove "all", will only select that element
+
+			// 0.Grab some toys
+			var button = document.querySelector('button.product');
+			var departureDetails = document.querySelector('div.departure-details');
+			var showHideText = document.querySelector('button.product span');
+
+			console.log('Button', button);
+			console.log('Show Hide Text', showHideText);
+			console.log('Depart Details', departureDetails);
+			// 1.Hide departure-details
+			departureDetails.style.display = 'none';
+			// 2. when user clicks on button(toggle)
+			button.addEventListener('click',function(){
+				console.log('you clicked me!');
+
+				if (departureDetails.style.display == 'none')
+				{
+					console.log('Do A');
+					// a. shows departure-details
+						departureDetails.style.display = 'block';
+						showHideText.innerHTML = 'Hide';
+							// change name to 'Hide'
+				}
+				else {
+					console.log('Do B');
+
+				// b. hides departure-details
+					departureDetails.style.display = 'none';
+					showHideText.innerHTML = 'Show';
+				}
+					// change name to 'Show'
+				});
+
 
 
 		</script>
