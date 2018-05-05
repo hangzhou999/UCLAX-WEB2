@@ -1,0 +1,73 @@
+
+#stage {
+  width:600px;
+  height:960px;
+  display:flex;
+  margin:auto;
+}
+.set {
+  position:relative;
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+  margin:0;
+  padding:0;
+}
+.birds {
+  width:200px;
+  display:flex;
+  flex-flow:column wrap;
+  align-items:center;
+}
+.bottombird {
+  position:absolute;
+  margin-top:400px;
+  transition: all 2s;
+}
+.topbird {
+  position:absolute;
+  margin-top:400px;
+  opacity:0.00;
+  transition: all 2s;
+}
+.topbird.on{
+  position:absolute;
+  opacity:1.00;
+  margin-top:100px;
+  transition: all 2s;
+}
+.bottombird.on {
+  position:absolute;
+  opacity:0.00;
+  margin-top:100px;
+  transition: all 2s;
+}
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  border-radius:35px;
+  background-color:#ccc;
+  margin-top:600px;
+}
+.slider {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius:35px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.switch.on{
+  background-color:#2196F3;
+}
+.slider.on{
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+  transition: .4s;
+}

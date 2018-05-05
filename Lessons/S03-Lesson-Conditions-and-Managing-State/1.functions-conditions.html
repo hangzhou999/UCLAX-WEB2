@@ -17,16 +17,69 @@
 			/*-------------------------------------
 			| Review
 			-------------------------------------*/
+			var myVar = "contains a can't reference to a value.";
+			var myStr = 'Antoher can\'t string';
+			var myNum = 123;
+			var myNum2 = 123.12;
 
+			console.log(myVar + myStr);
+			console.log(myNum + myStr);
+			console.log(myNum + myNum2);
 
 			/*-------------------------------------
 			| Functions
 			-------------------------------------*/
+			function addMeup(myNum){
+				console.log(1 + 5);
+				console.log(10 * 3);
+				console.log(1 + myNum);
+				console.log(10 * myNum);
+			};
+			/*-------------------------------------
+			||
+			|| naming function is self-contained ,
+			doesn't matter if there is an variable outside
+			||
+			-------------------------------------*/
 
+			addMeup();
+			addMeup(10);
+			addMeup(20);
+			addMeup(100);
+
+
+		window.onload = function (){
+
+			var theH1 = document.querySelectorAll('h1');
+			console.log(theH1);
+
+			theH1[0].addEventListener('click',function(){
+				console.log('You hit me');
+
+			});
+
+		};
 
 			/*-------------------------------------
 			| Conditions
+			= to assign
+			=== is to checking to see if a equals to b
+			if (true) then it will return and show the content of the Function
+			if (false) then it will not return
 			-------------------------------------*/
+			var weather = 'sunny';
+			if (weather === 'rain')
+			{
+				console.log('bring yout umbrella');
+			}
+			else if (weather === 'sunny')
+			{
+				console.log('bring your suncreen');
+			}
+			else
+			{
+				console.log('Above was not true');
+			};
 
 		</script>
 	</head>

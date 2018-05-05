@@ -17,14 +17,19 @@
 			/*-------------------------------------
 			| Dataset Attributes
 			-------------------------------------*/
+			window.onload = function (){
+			var orange = document.querySelectorAll('img.orange');
+			console.log(orange[0].dataset.whatever);
+
+		};
 
 		</script>
 	</head>
 	<body>
 		<h1>Dataset Attributes</h1>
 
-		<img class="purple" 	src="./img/purple.png"	>
-		<img class="orange" 	src="./img/orange.png"	>
-		<img class="yellow" 	src="./img/yellow.png"	>
+		<img class="purple" 	src="./img/purple.png" data-whatever="one"	>
+		<img class="orange" 	src="./img/orange.png" data-whatever="two"	>
+		<img class="yellow" 	src="./img/yellow.png" data-whatever="three"	>
 	</body>
 </html>
